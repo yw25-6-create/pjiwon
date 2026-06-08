@@ -1,178 +1,338 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>생명과학과 제약 연구의 세계</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BioPharm Explorer | 생명과학과 신약 개발</title>
 
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-            margin:0;
-            background:#f4f8fb;
-            line-height:1.8;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        header{
-            background:#2b7a78;
-            color:white;
-            text-align:center;
-            padding:30px;
-        }
+body{
+    font-family:'Malgun Gothic', sans-serif;
+    background:#f4f9fc;
+    color:#333;
+    line-height:1.8;
+}
 
-        nav{
-            background:#17252a;
-            padding:15px;
-            text-align:center;
-        }
+header{
+    background:linear-gradient(135deg,#008080,#0f4c81);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
 
-        nav a{
-            color:white;
-            text-decoration:none;
-            margin:15px;
-            font-weight:bold;
-        }
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
 
-        section{
-            background:white;
-            margin:20px;
-            padding:25px;
-            border-radius:10px;
-            box-shadow:0 2px 5px rgba(0,0,0,0.1);
-        }
+header p{
+    font-size:1.2rem;
+}
 
-        h2{
-            color:#2b7a78;
-        }
+nav{
+    background:#083d56;
+    text-align:center;
+    padding:15px;
+    position:sticky;
+    top:0;
+}
 
-        .card{
-            background:#eef7f6;
-            padding:15px;
-            margin-top:10px;
-            border-left:5px solid #2b7a78;
-        }
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
 
-        footer{
-            background:#17252a;
-            color:white;
-            text-align:center;
-            padding:20px;
-            margin-top:30px;
-        }
-    </style>
+nav a:hover{
+    color:#7fffd4;
+}
+
+section{
+    max-width:1100px;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+h2{
+    color:#0f4c81;
+    margin-bottom:15px;
+}
+
+h3{
+    color:#008080;
+    margin-top:20px;
+}
+
+.card{
+    background:#eef9f8;
+    border-left:6px solid #008080;
+    padding:15px;
+    margin:15px 0;
+    border-radius:8px;
+}
+
+ul{
+    margin-left:20px;
+}
+
+.timeline{
+    margin-top:20px;
+}
+
+.step{
+    background:#f0f8ff;
+    padding:15px;
+    margin:10px 0;
+    border-radius:8px;
+    border-left:5px solid #0f4c81;
+}
+
+footer{
+    text-align:center;
+    background:#083d56;
+    color:white;
+    padding:20px;
+    margin-top:40px;
+}
+
+.hero{
+    text-align:center;
+    padding:20px;
+}
+
+.hero img{
+    width:120px;
+    margin-bottom:15px;
+}
+
+.highlight{
+    color:#0f4c81;
+    font-weight:bold;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-    <h1>생명과학과 제약 연구의 세계</h1>
-    <p>교과 내용과 연구원의 진로를 연결하다</p>
+    <h1>🧬 BioPharm Explorer</h1>
+    <p>생명과학 교과 내용에서 신약 개발까지</p>
 </header>
 
 <nav>
-    <a href="#career">진로 소개</a>
+    <a href="#intro">소개</a>
     <a href="#immune">항원·항체</a>
     <a href="#vaccine">백신</a>
+    <a href="#infection">감염병</a>
+    <a href="#cancer">암과 세포분열</a>
     <a href="#drug">신약 개발</a>
-    <a href="#roadmap">진로 로드맵</a>
+    <a href="#career">진로</a>
 </nav>
 
-<section id="career">
-    <h2>제약회사 연구원과 생명과학 연구원</h2>
+<section id="intro">
+    <h2>🔬 생명과학과 제약 연구는 어떻게 연결될까?</h2>
 
     <p>
-        생명과학 연구원은 생명 현상을 연구하며 질병의 원인과 치료 방법을 탐구한다.
-        제약회사 연구원은 이러한 연구 결과를 바탕으로 새로운 의약품을 개발한다.
+        학교에서 배우는 생명과학은 단순히 시험을 위한 지식이 아닙니다.
+        항원과 항체의 반응을 이해하면 백신과 항체 치료제를 개발할 수 있고,
+        세포 분열을 이해하면 암을 치료하는 항암제를 개발할 수 있습니다.
     </p>
 
     <div class="card">
-        <strong>필요 역량</strong>
-        <ul>
-            <li>생명과학 지식</li>
-            <li>화학 지식</li>
-            <li>실험 설계 능력</li>
-            <li>데이터 분석 능력</li>
-        </ul>
+        <strong>이 웹사이트의 목표</strong><br>
+        생명과학 교과 내용이 실제 제약회사 연구원과 생명과학 연구원의
+        연구 과정에 어떻게 활용되는지 알아본다.
     </div>
 </section>
 
 <section id="immune">
-    <h2>항원-항체 반응</h2>
+    <h2>🦠 항원·항체 반응</h2>
+
+    <h3>교과 개념</h3>
 
     <p>
-        항원은 우리 몸에 들어온 이물질이며,
-        항체는 이를 제거하기 위해 면역계가 만드는 단백질이다.
+        항원은 우리 몸이 이물질이라고 인식하는 물질이며,
+        항체는 B림프구가 만들어내는 단백질이다.
+        항체는 특정 항원에만 결합하는 특이성을 가진다.
     </p>
 
     <div class="card">
-        <strong>교과 연계</strong><br>
-        생명과학Ⅰ 면역 단원
+        <strong>생명과학Ⅰ 연계</strong><br>
+        면역 체계와 항원-항체 반응 단원
     </div>
 
-    <div class="card">
-        <strong>진로 연계</strong><br>
-        항체 치료제 개발, 면역 진단 키트 개발
-    </div>
-</section>
-
-<section id="vaccine">
-    <h2>백신과 감염병 예방</h2>
+    <h3>실제 연구 활용</h3>
 
     <p>
-        백신은 병원체의 일부를 이용하여 면역 기억을 형성하도록 돕는다.
-        실제 감염 전에 우리 몸이 병원체를 기억하도록 하는 것이다.
+        제약 연구원들은 특정 암세포에만 결합하는 항체를 설계하여
+        암세포만 공격하는 항체 치료제를 개발한다.
     </p>
 
     <div class="card">
-        <strong>교과 연계</strong><br>
-        감염성 질환 예방과 면역
-    </div>
-
-    <div class="card">
-        <strong>진로 연계</strong><br>
-        백신 연구원, 임상시험 연구원
-    </div>
-</section>
-
-<section id="drug">
-    <h2>신약 개발 과정</h2>
-
-    <ol>
-        <li>질병 원인 연구</li>
-        <li>후보 물질 탐색</li>
-        <li>세포·동물 실험</li>
-        <li>임상시험</li>
-        <li>의약품 허가</li>
-    </ol>
-
-    <div class="card">
-        <strong>실제 연구 분야</strong><br>
-        항암제, 면역치료제, 유전자 치료제 개발
-    </div>
-</section>
-
-<section id="roadmap">
-    <h2>진로 로드맵</h2>
-
-    <p>
-        고등학교 → 생명과학·제약 관련 학과 →
-        대학원 연구 → 제약회사 연구원 또는 생명과학 연구원
-    </p>
-
-    <div class="card">
-        <strong>추천 학과</strong>
+        <strong>관련 직업</strong>
         <ul>
-            <li>생명과학과</li>
-            <li>생명공학과</li>
-            <li>제약공학과</li>
-            <li>바이오로직스학과</li>
-            <li>약학과</li>
+            <li>항체 치료제 연구원</li>
+            <li>면역학 연구원</li>
+            <li>바이오의약품 연구원</li>
         </ul>
     </div>
 </section>
 
+<section id="vaccine">
+    <h2>💉 백신</h2>
+
+    <h3>교과 개념</h3>
+
+    <p>
+        백신은 병원체의 일부 또는 약화된 병원체를 이용하여
+        면역 기억을 형성하게 한다.
+    </p>
+
+    <h3>실제 연구 활용</h3>
+
+    <p>
+        연구원들은 병원체의 유전정보를 분석하여 백신 후보를 개발한다.
+        최근에는 mRNA 기술을 이용한 백신 연구도 활발하게 이루어지고 있다.
+    </p>
+
+    <div class="card">
+        <strong>관련 직업</strong>
+        <ul>
+            <li>백신 연구원</li>
+            <li>분자생물학 연구원</li>
+            <li>임상시험 연구원</li>
+        </ul>
+    </div>
+</section>
+
+<section id="infection">
+    <h2>🧫 감염성 질환 예방</h2>
+
+    <h3>감염병은 왜 퍼질까?</h3>
+
+    <p>
+        병원체는 사람 간 접촉, 공기, 음식 등을 통해 전파된다.
+        따라서 전파 경로를 차단하는 것이 중요하다.
+    </p>
+
+    <div class="card">
+        <strong>예방 방법</strong>
+        <ul>
+            <li>손 씻기</li>
+            <li>마스크 착용</li>
+            <li>예방 접종</li>
+            <li>격리</li>
+        </ul>
+    </div>
+
+    <p>
+        감염병 연구원들은 새로운 병원체를 분석하고,
+        효과적인 치료제와 백신을 개발한다.
+    </p>
+</section>
+
+<section id="cancer">
+    <h2>🧬 세포 분열과 암</h2>
+
+    <h3>교과 개념</h3>
+
+    <p>
+        체세포 분열은 생장과 조직 회복을 위해 일어난다.
+        하지만 세포 분열을 조절하는 유전자에 이상이 생기면
+        암이 발생할 수 있다.
+    </p>
+
+    <h3>실제 연구 활용</h3>
+
+    <p>
+        연구원들은 암세포가 정상 세포와 어떻게 다른지 분석하고,
+        암세포의 성장에 필요한 단백질을 억제하는 항암제를 개발한다.
+    </p>
+
+    <div class="card">
+        <strong>관련 직업</strong>
+        <ul>
+            <li>항암제 연구원</li>
+            <li>유전공학 연구원</li>
+            <li>종양학 연구원</li>
+        </ul>
+    </div>
+</section>
+
+<section id="drug">
+    <h2>💊 신약 개발 과정</h2>
+
+    <div class="timeline">
+
+        <div class="step">
+            <strong>1단계 : 질병 연구</strong><br>
+            질병의 원인과 작용 원리를 분석한다.
+        </div>
+
+        <div class="step">
+            <strong>2단계 : 표적 탐색</strong><br>
+            공격해야 할 단백질이나 유전자를 찾는다.
+        </div>
+
+        <div class="step">
+            <strong>3단계 : 후보 물질 개발</strong><br>
+            수천 개의 물질 중 효과가 있는 후보를 찾는다.
+        </div>
+
+        <div class="step">
+            <strong>4단계 : 전임상 시험</strong><br>
+            세포와 동물을 이용해 안전성을 확인한다.
+        </div>
+
+        <div class="step">
+            <strong>5단계 : 임상 시험</strong><br>
+            사람을 대상으로 효과와 안전성을 평가한다.
+        </div>
+
+        <div class="step">
+            <strong>6단계 : 허가 및 생산</strong><br>
+            승인 후 실제 의약품으로 생산한다.
+        </div>
+
+    </div>
+</section>
+
+<section id="career">
+    <h2>🎓 진로 로드맵</h2>
+
+    <div class="card">
+        <strong>고등학교</strong><br>
+        생명과학 · 화학 · 수학 · 영어 학습
+    </div>
+
+    <div class="card">
+        <strong>대학교</strong><br>
+        생명과학과 · 생명공학과 · 제약공학과 · 바이오로직스학과 · 약학과
+    </div>
+
+    <div class="card">
+        <strong>연구 분야</strong><br>
+        면역학 · 분자생물학 · 약물학 · 바이오의약품
+    </div>
+
+    <div class="card">
+        <strong>진출 분야</strong><br>
+        제약회사 연구원 · 바이오기업 연구원 · 국책연구소 연구원
+    </div>
+</section>
+
 <footer>
-    <p>2026 생명과학 진로 탐구 프로젝트</p>
+    <p>🧪 BioPharm Explorer | 생명과학과 신약 개발 탐구 프로젝트</p>
 </footer>
 
 </body>
